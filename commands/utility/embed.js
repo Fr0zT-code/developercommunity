@@ -7,7 +7,7 @@ module.exports = {
     expectedArgs: '<channel> <hexcolor> <text>',
     permissionError: 'You do not have permission to run this command',
     minArgs: 3,
-    maxArgs: 3,
+    maxArgs: 90,
     callback: (message, args, text) => {
         const channel = message.mentions.channels.first()
         const color = args.slice(1)
