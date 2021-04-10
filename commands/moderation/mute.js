@@ -9,9 +9,9 @@ module.exports = {
     maxArgs: 90,
     callback: (message, arguments, text) => {
         const target = message.mentions.users.first();
-            if (target) {
+
      
-                let mainRole = message.guild.roles.cache.find(role => role.name === 'Member', 'Owner', 'Admin', 'MH Staff', 'Sr. Developer', 'Developer', 'Jr. Developer', 'Bot Developer', 'Server Owner', 'Minecraft Skript', 'Java', 'JavaScript', 'Python', 'C');
+                let mainRole = message.guild.roles.cache.find(role => role.name === 'Member');
                 let muteRole = message.guild.roles.cache.find(role => role.name === 'Muted');
      
                 let memberTarget = message.guild.members.cache.get(target.id);
@@ -30,9 +30,7 @@ module.exports = {
                     memberTarget.roles.remove(muteRole.id);
                     memberTarget.roles.add(mainRole.id);
                 }, ms(args[1]));
-            } else {
-                message.channel.send('**Invalid User**');
-            }
+            
         
 
     },
