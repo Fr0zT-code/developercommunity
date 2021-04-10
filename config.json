@@ -1,5 +1,6 @@
 {
     "token": "ODMwMDc1ODgyNzUyMDQ5MTYz.YHBaaA.2OoIQ_y9F7xxvOZzxGn4Uxvn-jc",
     "prefix": "!",
-    "mongoPath": "mongodb+srv://Fr0zT:wumpusmodmailbot@discordmodmailbot.wumsu.mongodb.net/Data"
+    "mongoPath": "mongodb+srv://Fr0zT:wumpusmodmailbot@discordmodmailbot.wumsu.mongodb.net/Data",
+    "redisPath": "//redis-10847.c261.us-east-1-4.ec2.cloud.redislabs.com:10847?password=AjfSc2e0i3nEiiApQiUoCK3l3hBnqVMw"
 }

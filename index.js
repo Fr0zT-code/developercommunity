@@ -4,6 +4,7 @@ const config = require('./config.json');
 const mongo = require('./mongo');
 const loadCommands = require('./commands/load-commands')
 
+
 client.on('ready', async () => {
     console.log(`Ready! Logged in as ${client.user.tag}`)
     client.user.setActivity('YouTube', { type: 'WATCHING' }).catch(console.error);
@@ -35,6 +36,9 @@ client.on('guildMemberAdd', guildMember => {
             .setTimestamp();
             guildMember.guild.channels.cache.get('829906274111848468').send(embed);
 });
+
+
+
 
 
 
