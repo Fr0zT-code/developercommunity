@@ -22,7 +22,7 @@ module.exports = {
   
   const embed = new Discord.MessageEmbed()
   .setTitle(`${user.tag} avatar`)
-  .setDescription(`[Avatar URL de **${user.tag}**](${avatar})`)
+  .setDescription(`[Avatar URL for **${user.tag}**](${avatar})`)
   .setColor(0x1d1d1d)
   .setImage(avatar)
   
