@@ -12,16 +12,12 @@ module.exports = {
                     .setTitle('Basic info')
                     .setFooter('Page 1/4')
                     .addFields(
-                        { name: 'Thank you', value: 'Thank you for using the Dev Com bot, this means a lot to its developers' },
-                        { name: '🤖 - Moderation Commands', value: '' },
-                        { name: '😃 - Fun commands', value: '' },
-                        { name: '🐱‍👤 - Utility commands', value: '' }
+                        { name: 'Thank you', value: 'Thank you for using the Dev Com bot, this means a lot to its developers' }
                     )
                 ,
                 reactions: {
-                    '🤖': "moderationCommands",
-                    '😃': "funCommands",
-                    '🐱‍👤': "utilityCommands"
+
+                    '▶': "next"
                 }
             },
             {
@@ -37,9 +33,8 @@ module.exports = {
                     .setFooter('Page 2/4')
                 ,
                 reactions: {
-                    '◀': 'main',
-                    '😃': "funCommands",
-                    '🐱‍👤': "utilityCommands"
+                    '◀': 'previous',
+                    '▶': "next"
                 }
             },
             {
@@ -53,9 +48,8 @@ module.exports = {
                     .setFooter('Page 3/4')
                 ,
                 reactions: {
-                    '◀': 'main',
-                    '🤖': "moderationCommands",
-                    '🐱‍👤': "utilityCommands"
+                    '◀': 'previous',
+                    '▶': "next"
                 }
             },
             {
@@ -73,9 +67,7 @@ module.exports = {
                     
             ,
             reactions: {
-                '◀': 'main',
-                '🤖': "moderationCommands",
-                '😃': "funCommands"
+                '◀': 'previous'
             }
             },
         ], 300000)
