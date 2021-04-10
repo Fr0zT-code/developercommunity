@@ -78,7 +78,7 @@ module.exports = {
                 '◀': 'previous'
             }
             },
-        ], 300000)
+        ])
         helpMenu.start()
     },
 }
