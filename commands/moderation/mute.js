@@ -9,7 +9,7 @@ module.exports = {
     maxArgs: 90,
     callback: (message, arguments, text) => {
         const target = message.mentions.users.first()
-        let mainRole = message.guild.roles.chache.find(role => role.name === 'Member', 'Owner', 'Admin', 'MH Staff', 'Sr. Developer', 'Developer', 'Jr. Developer', 'Bot Developer', 'Server Owner', 'Minecraft Skript', 'Java', 'JavaScript', 'Python', 'C')
+        let mainRole = message.guild.roles.chache.find(role => role.name === 'Member')
         let muteRole = message.guild.roles.chache.find(role => role.name === 'Muted')
 
         let memberTarget = message.guild.members.cache.get(target.id)
