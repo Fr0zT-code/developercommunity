@@ -5,7 +5,7 @@ module.exports = {
     description: 'Mutes a user',
     expectedArgs: '<usermention> <duration>',
     permissionError: 'You do not have permission to use this command',
-    minArgs: 2,
+    minArgs: 1,
     maxArgs: 90,
     callback: (message, arguments, text) => {
         const target = message.mentions.users.first()
