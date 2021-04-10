@@ -16,7 +16,7 @@ module.exports = {
      
                 let memberTarget = message.guild.members.cache.get(target.id);
      
-                if (!args[1]) {
+                if (!arguments[1]) {
                     memberTarget.roles.remove(mainRole.id);
                     memberTarget.roles.add(muteRole.id);
                     message.channel.send(`<@${memberTarget.user.id}> has been muted`);
@@ -24,12 +24,12 @@ module.exports = {
                 }
                 memberTarget.roles.remove(mainRole.id);
                 memberTarget.roles.add(muteRole.id);
-                message.channel.send(`<@${memberTarget.user.id}> has been muted for ${ms(ms(args[1]))}`);
+                message.channel.send(`<@${memberTarget.user.id}> has been muted for ${ms(ms(arguments[1]))}`);
      
                 setTimeout(function () {
                     memberTarget.roles.remove(muteRole.id);
                     memberTarget.roles.add(mainRole.id);
-                }, ms(args[1]));
+                }, ms(arguments[1]));
             
         
 
