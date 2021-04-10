@@ -71,13 +71,12 @@ module.exports = {
                 )
                 .setFooter('Page 4/4')
                     
-                ,
-                reactions: {
-                    '◀': 'main',
-                    '🤖': "moderationCommands",
-                    '😃': "funCommands"
-                }
-                
+            ,
+            reactions: {
+                '◀': 'main',
+                '🤖': "moderationCommands",
+                '😃': "funCommands"
+            }
             },
         ], 300000)
         helpMenu.start()
