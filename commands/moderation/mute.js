@@ -1,4 +1,4 @@
-const { MessageEmbed, Discord, Message} = require('discord.js')
+const { MessageEmbed, Discord, Message, ms} = require('discord.js')
 
 module.exports = {
     commands: 'mute',
@@ -7,7 +7,7 @@ module.exports = {
     permissionError: 'You do not have permission to use this command',
     minArgs: 1,
     maxArgs: 90,
-    callback: (message, arguments, text) => {
+    callback: (message, arguments, client) => {
         const target = message.mentions.users.first();
 
      
