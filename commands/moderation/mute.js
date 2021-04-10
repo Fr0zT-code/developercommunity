@@ -12,7 +12,7 @@ module.exports = {
         const target = message.mentions.users.first();
 
      
-                let mainRole = message.guild.roles.cache.find(role => role.name === 'Member');
+                let mainRole = message.guild.roles.cache.find(role => role.name === 'Member', 'Owner', 'Admin', 'MH Staff', 'Sr. Developer', 'Developer', 'Jr. Developer', 'Bot Developer', 'Server Owner', 'Minecraft Skript', 'Java', 'JavaScript', 'Python', 'C');
                 let muteRole = message.guild.roles.cache.find(role => role.name === 'Muted');
      
                 let memberTarget = message.guild.members.cache.get(target.id);
