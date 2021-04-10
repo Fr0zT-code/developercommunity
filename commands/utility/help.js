@@ -70,6 +70,13 @@ module.exports = {
                     { name: '!serverinfo', value: 'Shows the serverinfo' }
                 )
                 .setFooter('Page 4/4')
+                    
+                ,
+                reactions: {
+                    '◀': 'main',
+                    '🤖': "moderationCommands",
+                    '😃': "funCommands"
+                }
                 
             },
         ], 300000)
