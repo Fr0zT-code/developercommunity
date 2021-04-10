@@ -5,12 +5,15 @@ module.exports = {
     commands: ['help', 'h'],
     description: 'Help command!',
     callback: (message, arguments, text) => {
+        const icon = message.guild.iconURL()
         let helpMenu = new Menu(message.channel, message.author.id, [
             {
                 name: 'main',
                 content: new MessageEmbed()
                     .setTitle('Basic info')
+                    .setThumbnail(icon)
                     .setFooter('Page 1/4')
+                    .setAuthor(`Requested by ${message.author.tag}`, message.author.icon)
                     .addFields(
                         { name: 'Thank you', value: 'Thank you for using the Dev Com bot, this means a lot to its developers' }
                     )
@@ -23,7 +26,9 @@ module.exports = {
             {
                 name: "moderationCommands",
                 content: new MessageEmbed()
-                    .setTitle('Moderation Commands')
+                    .setTitle('🤖 - Moderation Commands')
+                    .setAuthor(`Requested by ${message.author.tag}`, message.author.icon)
+                    .setThumbnail(icon)
                     .addFields(
 
                         { name: 'Moderation commands', value: 'Moderation commands will be displayed underneath' },
@@ -40,7 +45,9 @@ module.exports = {
             {
                 name: "funCommands",
                 content: new MessageEmbed()
-                    .setTitle('Fun Commands')
+                    .setTitle('😂 - Fun Commands')
+                    .setThumbnail(icon)
+                    .setAuthor(`Requested by ${message.author.tag}`, message.author.icon)
                     .addFields(
                         { name: '!add', value: 'Multiply two numbers' },
                         { name: '!meme', value: 'Shows a random meme from the meme subreddit' }
@@ -55,7 +62,9 @@ module.exports = {
             {
                 name: "utilityCommands",
                 content: new MessageEmbed()
-                .setTitle('Utility Commands')
+                .setTitle('🐱‍👤 - Utility Commands')
+                .setThumbnail(icon)
+                .setAuthor(`Requested by ${message.author.tag}`, message.author.icon)
                 .addFields(
                     { name: '!developer', value: 'Credits to developers of the bot' },
                     { name: '!embed', value: 'Makes it so you can embed some text' },
