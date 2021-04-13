@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const config = require('./config.json');
 const mongo = require('./mongo');
 const loadCommands = require('./commands/load-commands')
-process.on('warning', e => console.warn(e.stack));
+process.setMaxListeners(0)
 
 
 client.on('ready', async () => {
